@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: block;
+    background: url("../image/bg2.jpg") repeat;
+    background-size: cover;
+}
+.title-project{
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    left: 50%;
+    text-align: center;
+}
+
+.name-project{
+    margin: auto;
+    height:100%;
+    width: fit-content;
+    text-align: center;
+    color: brown;
+}
+.dashboard{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 0;
+    margin: 25px ;
+    height: 100%;
+}
+.dashboard .device-item{
+    width: 320px;
+    height: 90%;
+    margin: 25px;
+}
+.dashboard .device-item .name-device{
+    font-size: 23px;
+    float: left;
+    width: auto;
+    height: 10%;
+    border-bottom: 5px solid #B0002F;
+    border-bottom-style: double;
+}
+.dashboard .device-item .pic{
+    width: 100%;
+    height: 80%;
+    align-content: center;
+}
+.dashboard .device-item .btn{
+    background-image: linear-gradient(to right,#272727,#bebcbc,#272727);
+    background-size: 200%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border: none;
+    outline: none;
+    width: 45%;
+    height: 25px;
+    border-radius: 12px;
+    transition: 0.8s;
+}
+.dashboard .device-item .btn:hover{
+    background-position: right;
+}
+.viewgroup-sensor .item-sensor{
+    display: grid;
+    grid-template-columns: max-content auto;
+    color: rgb(252, 248, 13);
+    block-size: auto;
+    padding-left: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.viewgroup-sensor .item-sensor .value-sensor{
+    font-size: 24px;
+    font-family:sans-serif;
+    margin-left: 35px;
+    color:rgb(255, 0, 70);
+    font-weight: bold;
+}
+.viewgroup-sensor .item-sensor .name-sensor{
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 4px solid rgb(0, 255, 185);
+    
+    
+}
+@media screen and (max-width: 900px){
+    .dashboard{
+        grid-template-columns: 1fr;
+    }
+    .device-item{
+        justify-content: center;
+    }
+}
